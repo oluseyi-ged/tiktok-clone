@@ -33,7 +33,7 @@ function Video() {
         description="lol, baecation is going on well"
         song="Running Over - Justin Beiber ft..."
       />
-      <VideoSidebar />
+      <VideoSidebar likes="111K" messages="350" shares="37" />
     </div>
   )
 }
