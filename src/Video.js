@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react"
 import "./Video.css"
+import VideoFooter from "./VideoFooter"
 
 function Video() {
   const [playing, setPlaying] = useState(false)
@@ -22,9 +23,9 @@ function Video() {
         loop
         onClick={onVideoPress}
         ref={videoRef}
-        src="https://player.vimeo.com/external/574094480.sd.mp4?s=a3c3e6783d95ffa52b01edce2ca7cf74c91ec797&profile_id=165&oauth2_token_id=57447761"
+        src="https://player.vimeo.com/external/508153555.sd.mp4?s=0b3134d09b661361d8d9e89a39164feadf9f9bb1&profile_id=165&oauth2_token_id=57447761"
       ></video>
-      {/* <VideoFooter/> */}
+      <VideoFooter />
       {/* <VideoSidebar/> */}
     </div>
   )
