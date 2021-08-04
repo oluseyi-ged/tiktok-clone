@@ -1,0 +1,20 @@
+.videoHeader {
+  position: absolute;
+  top: 50px;
+  margin-left: 20px;
+  color: white;
+}
+
+.videoHeader__logo {
+  display: flex;
+  align-items: center;
+}
+
+.videoHeader__logo > img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.videoHeader__logo > p {
+  font-weight: 700;
+}
