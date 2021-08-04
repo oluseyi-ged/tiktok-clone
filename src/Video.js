@@ -4,7 +4,7 @@ import VideoFooter from "./VideoFooter"
 import VideoSidebar from "./VideoSidebar"
 import VideoHeader from "./VideoHeader"
 
-function Video() {
+function Video({ url, channel, description, song, likes, messages, shares }) {
   const [playing, setPlaying] = useState(false)
   const videoRef = useRef(null)
 
@@ -25,15 +25,11 @@ function Video() {
         loop
         onClick={onVideoPress}
         ref={videoRef}
-        src="https://player.vimeo.com/external/508153555.sd.mp4?s=0b3134d09b661361d8d9e89a39164feadf9f9bb1&profile_id=165&oauth2_token_id=57447761"
+        src={url}
       ></video>
-      <VideoHeader channel="lovegoals" />
-      <VideoFooter
-        channel="lovegoals"
-        description="lol, baecation is going on well"
-        song="Running Over - Justin Beiber ft..."
-      />
-      <VideoSidebar likes="111K" messages="350" shares="37" />
+      <VideoHeader channel={channel} />
+      <VideoFooter channel={channel} description={description} song={song} />
+      <VideoSidebar likes={likes} messages={messages} shares={shares} />
     </div>
   )
 }
