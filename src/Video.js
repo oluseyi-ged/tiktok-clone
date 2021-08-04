@@ -25,8 +25,12 @@ function Video() {
         ref={videoRef}
         src="https://player.vimeo.com/external/508153555.sd.mp4?s=0b3134d09b661361d8d9e89a39164feadf9f9bb1&profile_id=165&oauth2_token_id=57447761"
       ></video>
-      <VideoFooter />
-      {/* <VideoSidebar/> */}
+      <VideoFooter
+        channel="lovegoals"
+        description="lol, baecation is going on well"
+        song="Running Over - Justin Beiber ft..."
+      />
+      <VideoSidebar />
     </div>
   )
 }
